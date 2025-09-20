@@ -1,17 +1,40 @@
+
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
 
-function square() {
+function inverse() {
   var num = document.getElementById("n1");
-  num.value = num.value * num.value;
+  num.value = 1/num.value;
 }
 </script>
 </head>
 <body>
+  <h1>Calculadora Virginia molina</h1>
+
   Number:
   <input type="text" id="n1"><p>
 
-  <button onclick="square()"> x<sup>2</sup> </button>
+  <button onclick="inverse()"> 1/x </button>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora simple</title>
+</head>
+<body>
+  <h1>Calculadora de Virginia Molina</h1> <!-- Aquí el título con tu nombre -->
+
+  <button onclick="square()">x²</button>
+  <button onclick="inverse()">1/x</button>  <!-- Botón 1/x añadido -->
+
+  <script>
+    function square() {
+      alert('Botón x² pulsado');
+    }
+    function inverse() {
+      alert('Botón 1/x pulsado');
+    }
+  </script>
 </body>
 </html>
